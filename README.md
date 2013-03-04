@@ -1,4 +1,4 @@
-androids
+Asteroides
 ========
 
-Juego de androides en Android
+Juego de Asteroides en Android
