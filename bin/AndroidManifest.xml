@@ -32,6 +32,9 @@
             android:label="@string/preferencias" >
 
         </activity>
+        <activity 
+            android:name=".Puntuaciones"
+            android:label="@string/Salir"></activity>
     </application>
 
 </manifest>
