@@ -30,11 +30,15 @@
         <activity
             android:name=".Preferencias"
             android:label="@string/preferencias" >
-
         </activity>
-        <activity 
+        <activity
             android:name=".Puntuaciones"
-            android:label="@string/Salir"></activity>
+            android:label="@string/Salir" >
+        </activity>
+        <activity
+            android:name=".Juego"
+            android:label="@string/Juego" >
+        </activity>
     </application>
 
 </manifest>

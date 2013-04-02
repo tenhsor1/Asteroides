@@ -10,7 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class Asteroides extends Activity {
-	private Button bAcercaDe;
+	private Button bAcercaDe, bJugar;
 	private Button bSalir;
 	public static AlmacenPuntuacionesArray almacen = new AlmacenPuntuacionesArray();
 	
@@ -32,6 +32,14 @@ public class Asteroides extends Activity {
 			public void onClick(View v) {
 				lanzarPuntuaciones(v);
 
+			}
+		});
+		bJugar = (Button) findViewById(R.id.Button01);
+		bJugar.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				lanzarJuego(v);
+				
 			}
 		});
 	}
@@ -74,5 +82,8 @@ public class Asteroides extends Activity {
 		startActivity(i);
 
 		}
-
+	public void lanzarJuego(View view){
+		Intent i = new Intent(this, Juego.class);
+		startActivity(i);
+	}
 }
