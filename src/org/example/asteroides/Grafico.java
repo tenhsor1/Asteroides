@@ -27,7 +27,7 @@ public class Grafico {
 		canvas.save();
 		int x = (int) (posX+ancho/2);
 		int y = (int) (posY+alto/2);
-		canvas.rotate(rotacion, x, y);
+		canvas.rotate(angulo, x, y);
 		drawable.setBounds((int)posX, (int)posY, (int)posX+ancho, (int)posY+alto);
 		drawable.draw(canvas);
 		canvas.restore();
